@@ -1,5 +1,6 @@
-from interfaz import interfaz_calculadora
-root=interfaz_calculadora()
+from interfaz import InterfazCalculadora
+root=InterfazCalculadora()
 
 root.mainloop()
+
 
