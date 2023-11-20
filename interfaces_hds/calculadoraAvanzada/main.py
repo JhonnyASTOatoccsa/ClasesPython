@@ -1,5 +1,5 @@
-from interfaz import InterfazCalculadora
-#from tkinter import*
-root=InterfazCalculadora()
+from interfaz import interfaz_calculadora
+root=interfaz_calculadora()
 
 root.mainloop()
+
