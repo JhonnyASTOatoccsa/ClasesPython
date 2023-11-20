@@ -27,12 +27,18 @@ def enviar_boton(ventana,valor):
 def cambio_tema(ventana,colores):
     if ventana.tema_oscuro:
         ventana.config(bg=colores.COLOR_FONDO_LIGHT)
-        ventana.caja_operaciones.config(fg=colores.COLOR_TEXTO_LIGHT,bg=colores.COLOR_CAJA_TEXTO_LIGHT)
-        ventana.operacion_label.config(fg=colores.COLOR_TEXTO_LIGHT,bg=colores.COLOR_FONDO_LIGHT)
-        ventana.boton_tema.config(text='Modo Claro \uf167',relief=SUNKEN,bg=colores.COLOR_BOTONES_ESPECIAL_LIGHT)
+        ventana.caja_operaciones.config(fg=colores.COLOR_TEXTO_LIGHT,
+        bg=colores.COLOR_CAJA_TEXTO_LIGHT)
+        ventana.operacion_label.config(fg=colores.COLOR_TEXTO_LIGHT,
+        bg=colores.COLOR_FONDO_LIGHT)
+        ventana.boton_tema.config(text='Modo Claro \uf167',relief=SUNKEN,
+        bg=colores.COLOR_BOTONES_ESPECIAL_LIGHT)
     else:
         ventana.config(bg=colores.COLOR_FONDO_NEGRO)
-        ventana.caja_operaciones.config(fg=colores.COLOR_TEXTO_NEGRO,bg=colores.COLOR_CAJA_TEXTO_NEGRO)
-        ventana.operacion_label.config(fg=colores.COLOR_TEXTO_NEGRO,bg=colores.COLOR_FONDO_NEGRO)
-        ventana.boton_tema.config(text='Modo Oscuro \uf136',relief=RAISED,bg=colores.COLOR_BOTONES_ESPECIAL_NEGRO)
+        ventana.caja_operaciones.config(fg=colores.COLOR_TEXTO_NEGRO,
+        bg=colores.COLOR_CAJA_TEXTO_NEGRO)
+        ventana.operacion_label.config(fg=colores.COLOR_TEXTO_NEGRO,
+        bg=colores.COLOR_FONDO_NEGRO)
+        ventana.boton_tema.config(text='Modo Oscuro \uf136',relief=RAISED,
+        bg=colores.COLOR_BOTONES_ESPECIAL_NEGRO)
     ventana.tema_oscuro=not ventana.tema_oscuro
